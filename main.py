@@ -41,8 +41,7 @@ def main_loop(win):
     while running:
         for event in pg.event.get():
             if event.type == pg.QUIT:
-                pg.quit()
-                quit
+                running = False
 
         clock.tick(2)
         draw_win(win, apple)
